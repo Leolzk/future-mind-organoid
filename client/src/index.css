@@ -7,10 +7,10 @@
 @import "./font-enforcement.css";
 
 /* Typeface compliance: self-hosted Noto Serif CJK SC (Songti style) and Noto Sans CJK SC (Heiti style), both under the SIL Open Font License 1.1. See /fonts/OFL.txt. */
-@font-face { font-family:"FM Songti"; src:url("/fonts/NotoSerifCJKsc-Regular.otf") format("opentype"); font-style:normal; font-weight:400; font-display:block; }
-@font-face { font-family:"FM Songti"; src:url("/fonts/NotoSerifCJKsc-Bold.otf") format("opentype"); font-style:normal; font-weight:700; font-display:block; }
-@font-face { font-family:"FM Heiti"; src:url("/fonts/NotoSansCJKsc-Regular.otf") format("opentype"); font-style:normal; font-weight:400; font-display:block; }
-@font-face { font-family:"FM Heiti"; src:url("/fonts/NotoSansCJKsc-Bold.otf") format("opentype"); font-style:normal; font-weight:700; font-display:block; }
+@font-face { font-family:"FM Songti"; src:url("/fonts/FM-Songti-Subset.woff2") format("woff2"); font-style:normal; font-weight:400; font-display:swap; }
+@font-face { font-family:"FM Songti"; src:url("/fonts/FM-Songti-Bold-Subset.woff2") format("woff2"); font-style:normal; font-weight:700; font-display:swap; }
+@font-face { font-family:"FM Heiti"; src:url("/fonts/FM-Heiti-Subset.woff2") format("woff2"); font-style:normal; font-weight:400; font-display:swap; }
+@font-face { font-family:"FM Heiti"; src:url("/fonts/FM-Heiti-Bold-Subset.woff2") format("woff2"); font-style:normal; font-weight:700; font-display:swap; }
 
 :root { --paper:#f8fcfd; --paper-deep:#eaf5f7; --navy:#073a70; --ink:#102435; --muted:#5e7484; --line:rgba(7,58,112,.14); --blue:#2b95bb; --blue-light:#78d8e7; --blue-soft:rgba(43,149,187,.13); --red:#d9474e; --font-song:"FM Songti"; --font-hei:"FM Heiti"; --font-display:var(--font-song); --font-body:var(--font-hei); --ease:cubic-bezier(.23,1,.32,1); }
 * { box-sizing:border-box; } html { background:var(--paper); scroll-behavior:smooth; font-synthesis:none; } body { margin:0; min-width:320px; overflow-x:hidden; background:var(--paper); color:var(--ink); font-family:var(--font-body); font-size:15px; font-weight:500; line-height:1.65; } a { color:inherit; text-decoration:none; } button,a[href] { cursor:pointer; } button { font:inherit; } ::selection { background:var(--blue); color:#fff; }

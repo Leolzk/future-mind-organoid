@@ -21,6 +21,6 @@
 
 ## 字体与指针交互
 
-网站现已使用两套**本地自托管的开源字体**：`FM Songti`（Noto Serif CJK SC，宋体风格标题）与 `FM Heiti`（Noto Sans CJK SC，黑体风格正文和界面）。两套字体均覆盖中文、英文、数字与常用符号；字体文件与 `OFL.txt` 许可证均位于 `client/public/fonts/`，采用 SIL Open Font License 1.1。`index.html` 不加载 Google Fonts、Adobe Fonts 或其他外部字体服务；CSS 不再列出操作系统商业字体名称、通用字体回退或浏览器字体合成规则。
+网站现已使用两套**本地自托管的开源字体**：`FM Songti`（Noto Serif CJK SC，宋体风格标题）与 `FM Heiti`（Noto Sans CJK SC，黑体风格正文和界面）。两套字体均覆盖中文、英文、数字与常用符号。`client/public/fonts/` 中保留原始字体、`OFL.txt` 许可证以及用于网页的轻量 WOFF2 子集；所有字体采用 SIL Open Font License 1.1。`index.html` 不加载 Google Fonts、Adobe Fonts 或其他外部字体服务；CSS 不再列出操作系统商业字体名称、通用字体回退或浏览器字体合成规则。
 
 旗舰鼠标磁场、扫描环、数据流与粒子逻辑位于 `client/src/components/BioField.tsx`，样式位于 `index.css` 的 “AI BIO COMMAND CENTER” 区块。它们是纯前端视觉效果，不会收集用户数据；系统开启“减少动态效果”时会自动关闭。
