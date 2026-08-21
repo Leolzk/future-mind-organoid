@@ -5,7 +5,13 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-:root { --paper:#f8fcfd; --paper-deep:#eaf5f7; --navy:#073a70; --ink:#102435; --muted:#5e7484; --line:rgba(7,58,112,.14); --blue:#2b95bb; --blue-light:#78d8e7; --blue-soft:rgba(43,149,187,.13); --red:#d9474e; --font-song:"Songti SC","STSong",SimSun,serif; --font-hei:"PingFang SC","Microsoft YaHei","Heiti SC",SimHei,sans-serif; --font-display:var(--font-song); --font-body:var(--font-hei); --ease:cubic-bezier(.23,1,.32,1); }
+/* Typeface compliance: self-hosted Noto Serif CJK SC (Songti style) and Noto Sans CJK SC (Heiti style), both under the SIL Open Font License 1.1. See /fonts/OFL.txt. */
+@font-face { font-family:"FM Songti"; src:url("/fonts/NotoSerifCJKsc-Regular.otf") format("opentype"); font-style:normal; font-weight:400; font-display:swap; }
+@font-face { font-family:"FM Songti"; src:url("/fonts/NotoSerifCJKsc-Bold.otf") format("opentype"); font-style:normal; font-weight:700; font-display:swap; }
+@font-face { font-family:"FM Heiti"; src:url("/fonts/NotoSansCJKsc-Regular.otf") format("opentype"); font-style:normal; font-weight:400; font-display:swap; }
+@font-face { font-family:"FM Heiti"; src:url("/fonts/NotoSansCJKsc-Bold.otf") format("opentype"); font-style:normal; font-weight:700; font-display:swap; }
+
+:root { --paper:#f8fcfd; --paper-deep:#eaf5f7; --navy:#073a70; --ink:#102435; --muted:#5e7484; --line:rgba(7,58,112,.14); --blue:#2b95bb; --blue-light:#78d8e7; --blue-soft:rgba(43,149,187,.13); --red:#d9474e; --font-song:"FM Songti",serif; --font-hei:"FM Heiti",sans-serif; --font-display:var(--font-song); --font-body:var(--font-hei); --ease:cubic-bezier(.23,1,.32,1); }
 * { box-sizing:border-box; } html { background:var(--paper); scroll-behavior:smooth; } body { margin:0; min-width:320px; overflow-x:hidden; background:var(--paper); color:var(--ink); font-family:var(--font-body); font-size:15px; font-weight:500; line-height:1.65; } a { color:inherit; text-decoration:none; } button,a[href] { cursor:pointer; } button { font:inherit; } ::selection { background:var(--blue); color:#fff; }
 .fm-site { position:relative; min-height:100vh; overflow:clip; background:linear-gradient(125deg,#fbfeff 0%,#f4fbfc 42%,#edf7f9 100%); isolation:isolate; }.fm-site::before { content:""; position:fixed; z-index:-3; inset:0; pointer-events:none; background:radial-gradient(circle at 88% 7%,rgba(43,149,187,.14),transparent 24%),radial-gradient(circle at 10% 72%,rgba(43,149,187,.055),transparent 27%); }.skip-link { position:fixed; z-index:80; top:-60px; left:20px; padding:10px 14px; color:#fff; background:var(--navy); transition:top .16s var(--ease); }.skip-link:focus { top:18px; }
 
@@ -46,7 +52,7 @@
 @media (max-width:620px) { .fm-brand img { width:34px; height:34px; }.solution-grid::after { display:none; }.solution-card::after { top:69px; }.home-contact__mark { top:22px; right:7vw; width:39px; height:39px; }.check-list div::after,.custom-flow>article::after,.equipment-nodes article::after,.cro-flow article::after { display:none; } }
 
 /* ── FUTURE MIND / AI BIO COMMAND CENTER ─────────────────────────────── */
-:root { --paper:#030713; --paper-deep:#070d1c; --navy:#d9f8ff; --ink:#effdff; --muted:#91aebb; --line:rgba(127,223,244,.16); --blue:#39daf3; --blue-light:#9ff6ff; --blue-soft:rgba(57,218,243,.13); --red:#ff5766; --font-song:"Songti SC","STSong",SimSun,serif; --font-hei:"PingFang SC","Microsoft YaHei","Heiti SC",SimHei,sans-serif; --font-display:var(--font-song); --font-body:var(--font-hei); }
+:root { --paper:#030713; --paper-deep:#070d1c; --navy:#d9f8ff; --ink:#effdff; --muted:#91aebb; --line:rgba(127,223,244,.16); --blue:#39daf3; --blue-light:#9ff6ff; --blue-soft:rgba(57,218,243,.13); --red:#ff5766; --font-song:"FM Songti",serif; --font-hei:"FM Heiti",sans-serif; --font-display:var(--font-song); --font-body:var(--font-hei); }
 html,body { background:#030713; } body { color:var(--ink); font-weight:500; }.fm-site { background:radial-gradient(circle at 92% 7%,#103156 0%,#071426 31%,#030713 74%); }.fm-site::before { background:radial-gradient(circle at 74% 8%,rgba(40,216,248,.16),transparent 22%),radial-gradient(circle at 7% 78%,rgba(111,57,209,.11),transparent 30%); }.fm-site::after { content:""; position:fixed; z-index:-2; inset:0; pointer-events:none; opacity:.45; background-image:linear-gradient(rgba(107,222,242,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(107,222,242,.025) 1px,transparent 1px); background-size:64px 64px; mask-image:radial-gradient(circle at 50% 30%,#000,transparent 70%); }
 
 /* Pointer-driven biological interface, designed as an active field rather than a static glow. */
