@@ -4,6 +4,7 @@
  */
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "./font-enforcement.css";
 
 /* Typeface compliance: self-hosted Noto Serif CJK SC (Songti style) and Noto Sans CJK SC (Heiti style), both under the SIL Open Font License 1.1. See /fonts/OFL.txt. */
 @font-face { font-family:"FM Songti"; src:url("/fonts/NotoSerifCJKsc-Regular.otf") format("opentype"); font-style:normal; font-weight:400; font-display:block; }

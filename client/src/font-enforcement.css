@@ -1,0 +1,22 @@
+/* Font compliance final layer: active text styles use literal, self-hosted family names rather than CSS variable references. */
+* {
+  font-family: "FM Heiti" !important;
+}
+
+h1,
+h2,
+.fm-hero h1,
+.service-hero h1,
+.about-company h1,
+.section-heading h2,
+.detail-split h2,
+.home-contact h2,
+.chip-intro h2,
+.equipment-message h2,
+.cro-intro h2,
+.contact-company h2,
+.service-statement p,
+.home-intro > p,
+.research-architecture__heading h2 {
+  font-family: "FM Songti" !important;
+}
